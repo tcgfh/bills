@@ -1,0 +1,313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"orig",
+				"originalProcessStat"
+			],
+			[
+				"mock",
+				"mockProcessStatCallCount"
+			],
+			[
+				"expected",
+				"expectedProcessStatCallCount"
+			],
+			[
+				"mockPco",
+				"mockProcessStat"
+			],
+			[
+				"photo",
+				"photoServer"
+			],
+			[
+				"mockPor",
+				"mockProcessStatCallCount"
+			],
+			[
+				"m",
+				"mockFS"
+			],
+			[
+				"test_get",
+				"test_getProperty_multipleProp_existingKey"
+			],
+			[
+				"originalIma",
+				"originalImageMap"
+			],
+			[
+				"origi",
+				"originalImagemap"
+			],
+			[
+				"_",
+				"_imageMap"
+			],
+			[
+				"oE",
+				"oExpectNotOverwriteKey"
+			],
+			[
+				"expectNot",
+				"oExpectNotOverwrite"
+			],
+			[
+				"oExpect",
+				"oExpectNotOverwriteKey"
+			],
+			[
+				"tar",
+				"targetBasePath"
+			],
+			[
+				"target",
+				"targetBasePath"
+			],
+			[
+				"oEx",
+				"oExpectNotOverwrite"
+			],
+			[
+				"expect",
+				"expectMockFileHandlerCallCount"
+			],
+			[
+				"test_",
+				"test_isPhoto_isJPG"
+			],
+			[
+				"se",
+				"setCurrTestName"
+			],
+			[
+				"mockFile",
+				"mockFileHandlerFileName"
+			],
+			[
+				"targetP",
+				"targetBasePath"
+			],
+			[
+				"test",
+				"test_processStat_expect_if_dir_call_folderhandler"
+			],
+			[
+				"ori",
+				"originalFolderHandler"
+			],
+			[
+				"mockFol",
+				"mockFolderHandlerCallCount"
+			],
+			[
+				"base",
+				"_baseFolderPath"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/git/bills"
+	],
+	"file_history":
+	[
+		"/C/git/nodeserver/pom.xml",
+		"/C/git/tp/jasmine/lib/jasmine-core.js",
+		"/C/git/tp/jasmine/README.md",
+		"/C/git/nodeserver/photoServer.js",
+		"/C/git/nodeserver/helloworldserver.js",
+		"/C/git/nodeserver/test/moduleMock.js",
+		"/C/git/nodeserver/test/requireMock.js",
+		"/C/git/nodeserver/test/photoServerTest.css",
+		"/C/git/nodeserver/test/photoServerTest.js",
+		"/C/git/nodeserver/test/photoServerTest.html",
+		"/C/git/tp/jasmine/lib/jasmine-core/example/node_example/spec/helpers/jasmine_examples/SpecHelper.js",
+		"/C/git/tp/jasmine/lib/jasmine-core/example/node_example/spec/jasmine_examples/PlayerSpec.js",
+		"/C/git/tp/jasmine/lib/jasmine-core/example/node_example/lib/jasmine_examples/Player.js",
+		"/C/git/tp/jasmine/src/version.js",
+		"/C/git/tp/jasmine/grunt/config/jshint.js",
+		"/C/git/nodeserver/test/requireMock",
+		"/C/git/eat/.sublime.sublime-project",
+		"/C/Users/Robert/Documents/testserver/helloworldserver.js",
+		"/C/Users/Robert/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_baseFolderPath",
+			"},\n",
+			"filelocation",
+			"test_getProperty_multipleProp_existingKey",
+			"test_getProperty",
+			"filelocation",
+			"filename",
+			"currfile",
+			"isPhoto",
+			"isFolder",
+			"isFile",
+			"isFolder",
+			"test_processStat_expect_JPGfile_call_filehandler",
+			"test_processStat_expect_file_call_filehandler",
+			"test_processStat_expect_is_JPGfile_call_filehandler",
+			"test_processStat_expect_if_JPGfile_call_filehandler",
+			"test_processStat_expect_is_JPGfile_call_filehandler",
+			"test_processStat_expect_if_file_call_filehandler",
+			"addFileToEmptyIndex",
+			"test_processStat_expect_if_file_call_folderhandler",
+			"FolderHandlerCallCount",
+			"pathName"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bills.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 354.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
