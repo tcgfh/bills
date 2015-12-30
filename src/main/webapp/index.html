@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Bills</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/scripts/bills.js"></script>
+
 </head>
 
-<body>
-Hello World
+<body onload="main();">
+    <div id="content"></div>
+        <form id="valueInput">
+            <label for="basic">Dollar Value:</label>
+            <input type="number" name="dollarValue" id="basic" value="" step="0.01">
+        </form>
 </body>
 </html>
