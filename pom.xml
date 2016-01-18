@@ -24,6 +24,12 @@
         <configuration>
 
           <scanIntervalSeconds>2</scanIntervalSeconds>
+          <webApp>
+            <resourceBases>
+              <baseResource>src/main/webapp</baseResource>
+              <baseResource>src/test/webapp</baseResource>
+            </resourceBases>
+          </webApp>
         </configuration>
       </plugin>
     </plugins>
