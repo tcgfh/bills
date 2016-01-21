@@ -85,7 +85,7 @@ describe("billTable spec", function() {
                 expect(fnUnderTest).toBeDefined();
             });
 
-            it("returns entries by month", function() {
+            it("returns entries filtered by month", function() {
 
 
                 var aResult = oBillTable.getEntries({
@@ -106,7 +106,7 @@ describe("billTable spec", function() {
                     expect(aResult[i].month).toEqual(3);
                 }
             });
-            it("returns entries by year", function() {
+            it("returns entries filtered by year", function() {
                 var aResult = oBillTable.getEntries({
                     year: 2016
                 });
@@ -126,22 +126,24 @@ describe("billTable spec", function() {
                 }
             });
 
-            describe("returns entries by month and year", function() {
+            describe("returns entries filtered by month and year", function() {
 
-                it("returns all matches by month and year", function() {
+                it("when matches month and year", function() {
+                    var expectedMonth = 4;
+                    var expectedYear = 2016;
                     var aResult = oBillTable.getEntries({
-                        year: 2016,
-                        month: 3
+                        year: expectedYear,
+                        month: expectedMonth
                     });
 
                     expect(aResult.length).toEqual(5);
                     for(var i = 0; i < aResult.length; i++) {
-                        expect(aResult[i].year).toEqual(2016);
-                        expect(aResult[i].month).toEqual(3);
+                        expect(aResult[i].year).toEqual(expectedYear);
+                        expect(aResult[i].month).toEqual(expectedMonth);
                     }
                 });
 
-                it("returns no results when match only year", function() {
+                it("when matches only year", function() {
                     var aResult = oBillTable.getEntries({
                         year: 2015,
                         month: 3
@@ -149,12 +151,26 @@ describe("billTable spec", function() {
 
                     expect(aResult.length).toEqual(0);
 
+                    var aResult = oBillTable.getEntries({
+                        year: 0,
+                        month: 3
+                    });
+
+                    expect(aResult.length).toEqual(0);
+
                 });
 
-                it("returns no results when match only month", function() {
+                it("when matches only month", function() {
                     var aResult = oBillTable.getEntries({
                         year: 2017,
                         month: 0
+                    });
+
+                    expect(aResult.length).toEqual(0);
+
+                    var aResult = oBillTable.getEntries({
+                        year: 2017,
+                        month: 7
                     });
 
                     expect(aResult.length).toEqual(0);

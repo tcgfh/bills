@@ -28,16 +28,22 @@ function BillTable() {
     };
 
     this.getEntries = function(oParameters) {
-        var searchMonth = oParameters.month;
-        var searchYear = oParameters.year;
+        var iSearchMonth = oParameters.month;
+        var iSearchYear = oParameters.year;
         var aSearchResult = [];
-        if(searchMonth) {
+        if(iSearchMonth !== undefined && iSearchYear != undefined) {
             aSearchResult = this._aBillTable.filter(function(oElement, iIndex, aBillTable) {
-                return oElement.month === searchMonth;
+                var bMatchMonth = !!(oElement.month === iSearchMonth);
+                var bMatchYear = !!(oElement.year === iSearchYear);
+                return bMatchMonth && bMatchYear
             });
-        } else if (searchYear) {
+        } else if(iSearchMonth) {
             aSearchResult = this._aBillTable.filter(function(oElement, iIndex, aBillTable) {
-                return oElement.year === searchYear;
+                return oElement.month === iSearchMonth;
+            });
+        } else if (iSearchYear) {
+            aSearchResult = this._aBillTable.filter(function(oElement, iIndex, aBillTable) {
+                return oElement.year === iSearchYear;
             });
         }
         return aSearchResult;
