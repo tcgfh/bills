@@ -1,4 +1,6 @@
 function BillTable() {
+    var STORAGEKEY = "billTable";
+
     this._aBillTable = [];
     function oTableEntry() {
 
@@ -9,7 +11,6 @@ function BillTable() {
 
         return this;
     };
-
     this.addEntry = function(oEntryValues){
         var sMonth = oEntryValues.month;
         var iYear = oEntryValues.year;
@@ -47,6 +48,20 @@ function BillTable() {
             });
         }
         return aSearchResult;
+    };
+
+    this.saveToLocal = function() {
+        localStorage.setItem(STORAGEKEY, this._aBillTable);
+        return;
+    };
+
+    this.loadFromLocal = function() {
+        var oSavedData = localStorage.getItem(STORAGEKEY);
+
+        if(oSavedData != null) {
+            this._aBillTable = oSavedData;
+        }
+        return;
     };
 
     return this;

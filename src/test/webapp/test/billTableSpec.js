@@ -179,5 +179,73 @@ describe("billTable spec", function() {
 
             });
         });
+        describe("fn saveToLocal", function() {
+            var oBillTable;
+            beforeEach(function() {
+                oBillTable = new BillTable();
+            });
+
+            it("exists", function() {
+                expect(oBillTable.saveToLocal).toBeDefined();
+            });
+
+            it("saves data to the localStorage using the key billTable", function() {
+                spyOn(localStorage, "setItem");
+                var expectedKey = "billTable";
+                var expectedData = [{
+                    something: 1,
+                    value: "someString"
+                }];
+
+                oBillTable._aBillTable = expectedData;
+                oBillTable.saveToLocal();
+
+                expect(localStorage.setItem).toHaveBeenCalledWith(expectedKey, expectedData);
+            })
+        });
+
+        describe("fn loadFromLocal", function() {
+            var oBillTable;
+
+            beforeEach(function() {
+                oBillTable = new BillTable();
+            });
+
+            it("exists", function() {
+                expect(oBillTable.loadFromLocal).toBeDefined();
+            });
+
+            it("loads data from local storage key billTable", function() {
+                var expectedData = [{
+                    something: 1,
+                    value: "someString"
+                }];
+                var expectedKey = "billTable";
+                spyOn(localStorage, "getItem").and.returnValue(expectedData);
+                oBillTable._aBillTable = [];
+
+                oBillTable.loadFromLocal();
+
+                expect(localStorage.getItem).toHaveBeenCalledWith(expectedKey);
+                expect(oBillTable._aBillTable).toEqual(expectedData);
+
+            });
+
+            it("does nothing if local storage has no billTable key", function() {
+                var expectedData = [{
+                    something: 1,
+                    value: "someString"
+                }];
+                var expectedKey = "billTable";
+                spyOn(localStorage, "getItem").and.returnValue(null);
+                oBillTable._aBillTable = expectedData;
+
+                oBillTable.loadFromLocal();
+
+                expect(localStorage.getItem).toHaveBeenCalledWith(expectedKey);
+                expect(oBillTable._aBillTable).toEqual(expectedData);
+
+            });
+        });
     });
 });
