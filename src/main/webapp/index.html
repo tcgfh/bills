@@ -5,20 +5,22 @@
     <title>Bills</title>
     <script
             id="sap-ui-bootstrap"
+            src="https://openui5.hana.ondemand.com/1.36.10/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-theme="sap_bluecrystal" >
+    </script>
+    <script
+            id="sap-ui-bootstrap"
             src="tp/ui5/resources/sap-ui-core.js"
             data-sap-ui-libs="sap.ui.commons"
             data-sap-ui-theme="sap_bluecrystal" >
     </script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-    <script src="/scripts/bills.js"></script>
+    <script src="/scripts/main.js"></script>
 
 </head>
 
-<body onload="main();">
+<body class="sapUiBody" onload="main();">
     <div id="content"></div>
-        <form id="valueInput">
-            <label for="basic">Dollar Value:</label>
-            <input type="number" name="dollarValue" id="basic" value="" step="0.01">
-        </form>
 </body>
 </html>

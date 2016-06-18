@@ -29,6 +29,41 @@ function initUI() {
 
 };
 
+function BillEntry(sCategory, dValue) {
+    this.sCategory = sCategory || "";
+    this.dValue = dValue || 0;
+    return this;
+};
+
+function Bills() {
+    this._aBillEntries = [];
+
+    this.addEntry = function addEntry(sCategory, dValue) {
+        var oBillEntry = new BillEntry(sCategory, dValue);
+        this._aBillEntries = oBillEntry;
+    };
+
+    this.sumEntries = function sumEntries(sCategory) {
+        var aFilteredEntries = this._aBillEntries(function(oCurrElement) {
+            return sCurrElement.sCategory === sCategory;
+        });
+
+        var dSigmaSum = aFilteredEntries.reduce(function(dPreviousValue, oCurrentElement) {
+            return dPreviousValue + oCurrentElement.dValue;
+        }, 0);
+
+        return dSigmaSum;
+    };
+
+    this.sumAllEntries = function sumAllEntries() {
+        var dSigmaSum = this._aBillEntries.reduce(function(dPreviousValue, oCurrentElement) {
+            return dPreviousValue + oCurrentElement.dValue;
+        }, 0);
+
+        return dSigmaSum;
+    };
+};
+
 function billsList(oOptions) {
 
     this._oCategory = {
